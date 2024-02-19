@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 100vh;
+    background-color: #f4978e;
+}
+
+#coracao {
+    font-size: 100px;
+    color: #d62828;
+    animation: pulse 1s infinite alternate;
+    cursor: pointer;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+}
+
+#poema {
+    display: none;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    margin-top: 20px;
+    white-space: pre-line;
+}
